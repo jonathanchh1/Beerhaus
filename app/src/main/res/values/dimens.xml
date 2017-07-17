@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bottom_margin">5dp</dimen>
+    <dimen name="card_radius">2dp</dimen>
+    <dimen name="cardElev">3dp</dimen>
+    <dimen name="height">180dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="text_size">25sp</dimen>
+    <dimen name="detail_view_padding_vertical">@dimen/abc_list_item_padding_horizontal_material</dimen>
+    <dimen name="detail_horizontal_margin">16dp</dimen>
+    <dimen name="poster_width_for_detail">200dp</dimen>
+    <dimen name="poster_height_for_detail">180dp</dimen>
+    <dimen name="poster_vertical_padding">16dp</dimen>
+    <dimen name="poster_padding_right">16dp</dimen>
+    <dimen name="detail_title_bottom_margin">4dp</dimen>
+    <dimen name="detail_title_left_padding">4dp</dimen>
+    <dimen name="button_vertical_margin">16dp</dimen>
+    <dimen name="date_vertical_padding">16dp</dimen>
+    <dimen name="movie_overview_padding_top">16dp</dimen>
+    <dimen name="description_size">16dp</dimen>
+    <dimen name="app_bar_height">250dp</dimen>
+    <dimen name="detail_horizontal_padding">22dp</dimen>
+    <dimen name="detail_size">15sp</dimen>
+</resources>

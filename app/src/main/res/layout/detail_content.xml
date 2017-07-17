@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:paddingBottom="@dimen/abc_list_item_padding_horizontal_material"
+    android:paddingEnd="@dimen/detail_horizontal_padding"
+    android:paddingLeft="@dimen/detail_horizontal_padding"
+    android:paddingRight="@dimen/detail_horizontal_padding"
+    android:paddingStart="@dimen/detail_horizontal_padding"
+    android:paddingTop="@dimen/abc_list_item_padding_horizontal_material"
+    android:background="@color/detail_accent_pane_background"
+    app:columnCount="2">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="@string/name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/name_title"
+            android:layout_width="0dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/detail_size"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            tools:text="19" />
+
+    <TextView
+        android:id="@+id/detail_producer_textview"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/producer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/producer"
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/detail_size"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="19" />
+    <android.support.v4.widget.Space
+        android:layout_height="@dimen/detail_view_padding_vertical"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/detail_volume_textview"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/volume"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/volume"
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/detail_size"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="19" />
+
+    <TextView
+        android:id="@+id/detail_style_textview"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/style"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1" />
+
+
+    <TextView
+        android:id="@+id/style"
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/detail_size"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="19" />
+
+    <android.support.v4.widget.Space
+        android:layout_height="@dimen/detail_view_padding_vertical"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/detail_description_textview"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/description"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1" />
+
+
+    <TextView
+        android:id="@+id/tags"
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/detail_size"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="19" />
+
+    <TextView
+        android:id="@+id/detail_update_textview"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/update"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/updated_at"
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/detail_size"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="19" />
+
+
+
+    <android.support.v4.widget.Space
+        android:layout_height="@dimen/detail_view_padding_vertical"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/detail_varietal_textview"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/varietal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/varietal"
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/detail_size"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="19" />
+
+    <TextView
+        android:id="@+id/detail_price_textview"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/price"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/detail_size"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="19" />
+
+    <TextView
+        android:id="@+id/detail_category_textview"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/category"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1"/>
+
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/detail_size"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="19" />
+
+
+    <android.support.v4.widget.Space
+        android:layout_height="@dimen/detail_view_padding_vertical"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/detail_origin_textview"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/origin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1"/>
+
+
+    <TextView
+        android:id="@+id/origin"
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/detail_size"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="19" />
+
+    <TextView
+        android:id="@+id/detail_alcohol_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="@string/alcohol_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/alcohol_content"
+        android:layout_width="0dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/detail_size"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        tools:text="19" />
+
+
+
+</android.support.v7.widget.GridLayout>
