@@ -181,6 +181,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 do {
                     Beeritems items = new Beeritems(cursor);
                     results.add(items);
+                    Log.d(TAG, "beer " + "saved " + cursor.getCount());
+
                 } while (cursor.moveToNext());
             }
 
