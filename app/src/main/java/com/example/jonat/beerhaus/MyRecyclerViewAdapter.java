@@ -48,6 +48,12 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         }
     }
 
+    public void clear() {
+            synchronized (beeritems){
+                feedItemList.clear();
+            }
+            notifyDataSetChanged();
+    }
 
 
     public interface Callbacks{

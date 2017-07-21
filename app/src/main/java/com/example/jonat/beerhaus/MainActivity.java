@@ -131,6 +131,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 break;
 
             case R.id.action_favorite:
+                if(SortOrder.equals(Product)){
+                    adapter.clear();
+                    adapter.notifyDataSetChanged();
+                }
                 SortOrder = Favorites;
                 SortRange(SortOrder);
                 item.setChecked(true);
@@ -141,6 +145,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         }
                 return super.onOptionsItemSelected(item);
         }
+
+
+
+
 
     private boolean isNetworkAvailable(Context context){
         ConnectivityManager connectivityManager = (ConnectivityManager)
