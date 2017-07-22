@@ -32,7 +32,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -45,8 +44,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     public final String Product = "products";
     private ProgressBar progressBar;
     private Beeritems items = new Beeritems();
-    public final String Favorites = "favorite";
-    private String SortOrder = Product;
+    public final String Favorites  = "favorite";
+    public String SortOrder = Favorites;
     private final String BEER = "beer";
     @Bind(R.id.toolbar1)
     Toolbar mToolbar;
@@ -93,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
 
     private void SortRange(String Choice) {
-        if(!Choice.contentEquals(Favorites)) {
+        if(!Choice.equals(Favorites)) {
             if(isNetworkAvailable(getApplicationContext())) {
                 new DownloadTask().execute(Choice);
             }
@@ -124,17 +123,13 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             case R.id.alcohol_menu:
                 if (SortOrder.equals(Favorites)) {
                     getSupportLoaderManager().destroyLoader(CURSOR_LOADER_ID);
+                    SortOrder = Product;
+                    SortRange(SortOrder);
                 }
-                SortOrder = Product;
-                SortRange(SortOrder);
                 item.setChecked(true);
                 break;
 
             case R.id.action_favorite:
-                if(SortOrder.equals(Product)){
-                    adapter.clear();
-                    adapter.notifyDataSetChanged();
-                }
                 SortOrder = Favorites;
                 SortRange(SortOrder);
                 item.setChecked(true);
@@ -183,12 +178,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
-            ArrayList<Beeritems> results = new ArrayList<>();
             //if we have data in database for Fav. beers.
+        ArrayList<Beeritems> beerList = new ArrayList<Beeritems>();
             if (cursor != null && cursor.moveToFirst()) {
                 do {
                     Beeritems items = new Beeritems(cursor);
-                    results.add(items);
+                    beerList.add(items);
                     Log.d(TAG, "beer " + "saved " + cursor.getCount());
 
                 } while (cursor.moveToNext());
@@ -204,7 +199,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
 
-    public class DownloadTask extends AsyncTask<String, Void, Integer> implements MyRecyclerViewAdapter.Callbacks{
+    private class DownloadTask extends AsyncTask<String, Void, Integer> implements MyRecyclerViewAdapter.Callbacks{
 
         @Override
         protected void onPreExecute() {
