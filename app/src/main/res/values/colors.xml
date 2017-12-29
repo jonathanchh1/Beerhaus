@@ -8,5 +8,6 @@
     <color name="black">#000</color>
     <color name="detail_accent_pane_background">#455A64</color>
     <color name="detail_accent_label">#90A4AE</color>
+    <color name="medium_grey">#686464</color>
 
 </resources>

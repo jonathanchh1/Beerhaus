@@ -25,7 +25,7 @@
             android:name=".data.BeerProvider"
             android:authorities="com.example.jonat.beerhaus.data"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="false" />
     </application>
 
 </manifest>

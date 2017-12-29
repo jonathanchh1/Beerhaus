@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="@dimen/nav_header_height"
+android:background="@drawable/beer_background"
+android:orientation="vertical"
+android:padding="@dimen/keyline">
+
+<TextView
+    android:id="@+id/name_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:textAlignment="center"
+    android:typeface="monospace"
+    android:textStyle="bold"
+    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+    android:textColor="@color/text_color_detail"
+    android:textSize="@dimen/text_title"
+    android:text="@string/app_name"/>
+</LinearLayout>

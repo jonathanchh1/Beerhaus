@@ -12,7 +12,7 @@ import com.example.jonat.beerhaus.data.BeerContract;
 
 public class Favorited {
 
-    public static int isFavorited(Context context, int id) {
+    public static int isBeerFavorited(Context context, int id) {
         Cursor cursor = context.getContentResolver().query(
                 BeerContract.BeerEntry.CONTENT_URI,
                 null,   // projection
@@ -20,6 +20,7 @@ public class Favorited {
                 new String[] { Integer.toString(id) },   // selectionArgs
                 null    // sort order
         );
+        assert cursor != null;
         int numRows = cursor.getCount();
         cursor.close();
         return numRows;

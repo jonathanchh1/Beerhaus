@@ -1,9 +1,11 @@
 package com.example.jonat.beerhaus;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.ContentValues;
 import android.content.Intent;
+
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -25,7 +27,7 @@ import android.widget.Toast;
 import com.example.jonat.beerhaus.data.BeerContract;
 import com.squareup.picasso.Picasso;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -40,50 +42,50 @@ public class BeerDetailFragment extends Fragment {
     LayoutInflater mLayoutInflater;
     private ShareActionProvider mShareActionProvider;
 
-    @Bind(R.id.name_title)
+    @BindView(R.id.name_title)
     TextView mTitle;
-    @Bind(R.id.alcohol_content)
+    @BindView(R.id.alcohol_content)
     TextView mContent;
-    @Bind(R.id.volume)
+    @BindView(R.id.volume)
     TextView volume;
-    @Bind(R.id.category)
+    @BindView(R.id.category)
     TextView category;
-    @Bind(R.id.tags)
+    @BindView(R.id.tags)
     TextView description;
-    @Bind(R.id.updated_at)
+    @BindView(R.id.updated_at)
     TextView update;
 
-    @Bind(R.id.origin)
+    @BindView(R.id.origin)
     TextView origin;
-    @Bind(R.id.price)
+    @BindView(R.id.price)
     TextView prices;
-    @Bind(R.id.producer)
+    @BindView(R.id.producer)
     TextView producer;
-    @Bind(R.id.style)
+    @BindView(R.id.style)
     TextView style;
-    @Bind(R.id.varietal)
+    @BindView(R.id.varietal)
     TextView varietal;
-    @Bind(R.id.name)
+    @BindView(R.id.name)
     TextView mdetail_name;
-    @Bind(R.id.detail_alcohol_content)
+    @BindView(R.id.detail_alcohol_content)
     TextView mdetail_alcohol;
-    @Bind(R.id.detail_category_textview)
+    @BindView(R.id.detail_category_textview)
     TextView mdetail_category;
-    @Bind(R.id.detail_description_textview)
+    @BindView(R.id.detail_description_textview)
     TextView mdetail_description;
-    @Bind(R.id.detail_price_textview)
+    @BindView(R.id.detail_price_textview)
     TextView mdetail_price;
-    @Bind(R.id.detail_origin_textview)
+    @BindView(R.id.detail_origin_textview)
     TextView mdetail_origin;
-    @Bind(R.id.detail_producer_textview)
+    @BindView(R.id.detail_producer_textview)
     TextView mdetail_producer;
-    @Bind(R.id.detail_style_textview)
+    @BindView(R.id.detail_style_textview)
     TextView mdetail_style;
-    @Bind(R.id.detail_varietal_textview)
+    @BindView(R.id.detail_varietal_textview)
     TextView mdetail_varietal;
-    @Bind(R.id.detail_update_textview)
+    @BindView(R.id.detail_update_textview)
     TextView mdetail_update;
-    @Bind(R.id.detail_volume_textview)
+    @BindView(R.id.detail_volume_textview)
     TextView mdetail_volume;
     Toast mToast;
 
@@ -132,28 +134,7 @@ public class BeerDetailFragment extends Fragment {
 
             ButterKnife.bind(this, rootView);
 
-            mTitle.setText(items.getTitle());
-            mdetail_name.setText(getResources().getString(R.string.name));
-            mContent.setText(items.getAlcohol_level());
-            mdetail_alcohol.setText(getResources().getString(R.string.alcohol_content));
-            description.setText(items.getTags());
-            mdetail_description.setText(getResources().getString(R.string.description));
-            style.setText(items.getStyle());
-            mdetail_style.setText(getResources().getString(R.string.style));
-            category.setText(items.getCatagory_tertiary());
-            mdetail_category.setText(getResources().getString(R.string.category));
-            update.setText(items.getUpdate());
-            mdetail_update.setText(getResources().getString(R.string.update));
-            origin.setText(items.getOrigin());
-            mdetail_origin.setText(getResources().getString(R.string.origin));
-            prices.setText(items.getPrice());
-            mdetail_price.setText(getResources().getString(R.string.price));
-            producer.setText(items.getProducer());
-            mdetail_producer.setText(getResources().getString(R.string.producer));
-            varietal.setText(items.getVarietal());
-            mdetail_varietal.setText(getResources().getString(R.string.varietal));
-            volume.setText(items.getVolume());
-            mdetail_volume.setText(getResources().getString(R.string.volume));
+            getViews(items);
 
         }
 
@@ -161,6 +142,34 @@ public class BeerDetailFragment extends Fragment {
         return rootView;
     }
 
+    private void getViews(Beeritems items){
+        mTitle.setText(items.getTitle());
+        mdetail_name.setText(getResources().getString(R.string.name));
+        mContent.setText(items.getAlcohol_level());
+        mdetail_alcohol.setText(getResources().getString(R.string.alcohol_content));
+        description.setText(items.getTags());
+        mdetail_description.setText(getResources().getString(R.string.description));
+        style.setText(items.getStyle());
+        mdetail_style.setText(getResources().getString(R.string.style));
+        category.setText(items.getCatagory_tertiary());
+        mdetail_category.setText(getResources().getString(R.string.category));
+        update.setText(items.getUpdate());
+        mdetail_update.setText(getResources().getString(R.string.update));
+        origin.setText(items.getOrigin());
+        mdetail_origin.setText(getResources().getString(R.string.origin));
+        prices.setText(items.getPrice());
+        mdetail_price.setText(getResources().getString(R.string.price));
+        producer.setText(items.getProducer());
+        mdetail_producer.setText(getResources().getString(R.string.producer));
+        varietal.setText(items.getVarietal());
+        mdetail_varietal.setText(getResources().getString(R.string.varietal));
+        volume.setText(items.getVolume());
+        mdetail_volume.setText(getResources().getString(R.string.volume));
+
+
+    }
+
+    @SuppressLint("StaticFieldLeak")
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         if (items != null) {
@@ -175,19 +184,21 @@ public class BeerDetailFragment extends Fragment {
             new AsyncTask<Void, Void, Integer>() {
                 @Override
                 protected Integer doInBackground(Void... params) {
-                    return Favorited.isFavorited(getActivity(), items.getId());
+                    return Favorited.isBeerFavorited(getActivity(), items.getId());
                 }
 
                 @Override
                 protected void onPostExecute(Integer isFavored) {
                     action_fav.setIcon(isFavored == 1 ?
-                            R.drawable.ic_favorite_black_24dp :
+                            R.drawable.ic_favorite_black_24dp:
                             R.drawable.ic_favorite_border_black_24dp);
                 }
             }.execute();
+
         }
     }
 
+    @SuppressLint("StaticFieldLeak")
     public boolean onOptionsItemSelected(final MenuItem item) {
         int id = item.getItemId();
         switch (id) {
@@ -198,7 +209,7 @@ public class BeerDetailFragment extends Fragment {
 
                         @Override
                         protected Integer doInBackground(Void... params) {
-                            return Favorited.isFavorited(getActivity(), items.getId());
+                            return Favorited.isBeerFavorited(getActivity(), items.getId());
                         }
 
                         @Override
@@ -234,7 +245,6 @@ public class BeerDetailFragment extends Fragment {
                                     @Override
                                     protected Uri doInBackground(Void... params) {
                                         ContentValues values = new ContentValues();
-
                                         values.put(BeerContract.BeerEntry.COLUMN_BEER_ID, items.getId());
                                         values.put(BeerContract.BeerEntry.COLUMN_NAME, items.getTitle());
                                         values.put(BeerContract.BeerEntry.COLUMN_CONTENT, items.getAlcohol_level());
@@ -270,11 +280,19 @@ public class BeerDetailFragment extends Fragment {
                 return true;
 
             case R.id.action_share:
-                //share movie trailer
-
+                updateShareActionProvider(items);
 
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void updateShareActionProvider(Beeritems items) {
+        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, items.getTitle());
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, items.getTags() + " : "
+                + items.getProducer());
+        mShareActionProvider.setShareIntent(sharingIntent);
     }
 }

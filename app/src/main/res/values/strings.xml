@@ -19,4 +19,14 @@
     <string name="removed_from_favorites">removed favorite</string>
     <string name="added_to_favorites">added favorite</string>
     <string name="beer_haus">Beerhaus</string>
+    <string name="unavailable">no internet connection</string>
+    <string name="btn_retry">Try Again</string>
+    <string name="nofav">no favorite</string>
+    <string name="error_msg_unknown">unknown server error</string>
+    <string name="error_msg_no_internet">There\'s no internet connection</string>
+    <string name="error_msg_timeout">request timed_out</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="invite">Invite</string>
+    <string name="setting">Settings</string>
 </resources>
