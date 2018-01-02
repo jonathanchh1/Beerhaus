@@ -21,6 +21,9 @@
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleMarginStart="68dp"
+            app:expandedTitleMarginEnd="64dp"
+            app:collapsedTitleGravity="center"
             app:toolbarId="@+id/toolbar">
 
             <ImageView

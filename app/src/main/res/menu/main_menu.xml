@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
     <item
+        android:id="@+id/icon_bar"
         android:icon="@drawable/ic_sort_black_24dp"
         android:title="@string/sort_by"
         app:showAsAction="ifRoom">
