@@ -10,6 +10,8 @@
     <color name="detail_accent_label">#90A4AE</color>
     <color name="medium_grey">#1b686464</color>
     <color name="shadow">#00000000</color>
+    <color name="shadowfade">#10000000</color>
+
     <color name="white">#FFFF</color>
     <color name="dark_grey">#504f4f</color>
 

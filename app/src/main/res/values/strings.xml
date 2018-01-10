@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Beerhaus</string>
+    <string name="app_name">Beerhauz</string>
     <string name="volume">Volume:</string>
     <string name="description">Description:</string>
     <string name="alcohol_content">Alcohol Content:</string>
@@ -36,4 +36,52 @@
     <string name="invitation_cta">Share</string>
     <string name="username">user name</string>
     <string name="somme">connoiseur de l\'alcohol</string>
+    <string name="address">Address:</string>
+    <string name="city">Location:</string>
+    <string name="postal_code">Postal Code:</string>
+    <string name="telephone">Telephone:</string>
+    <string name="product_count">Product Count:</string>
+    <string name="inventory_count">Inventory Count:</string>
+    <string name="inventory_price">Inventory Price:</string>
+    <string name="fax">Fax Number:</string>
+    <string name="tasting">Tasting Bar:</string>
+    <string name="bilingual">Bilingual Services</string>
+    <string name="bilingualx">Yes</string>
+    <string name="tastingx">Yes</string>
+    <string name="beer_comment">Comment</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_notifications">Notifications</string>
+    <string name="summary_choose_ringtone">Choose notification sound</string>
+    <string name="pref_header_about">About</string>
+    <string name="summary_about">This App offers information about liguors, wines and beers for connoiseurs, sommeliers, and novices! Thanks for Download. Enjoy!</string>
+    <string name="app_version">1.5</string>
+    <string name="summary_support">Got any queries? We are happy to help!</string>
+    <string name="title_send_feedback">Send Feedback</string>
+    <string name="url_faq">Privacy Policy</string>
+    <string name="url_policy">Information not Distributed with other Vendors</string>
+    <string name="title_terms">Terms &amp; Conditions</string>
+    <string name="url_terms">terms-of-service/</string>
+    <string name="title_version">Version</string>
+    <string name="choose_email_client">Choose email client</string>
+    <string name="title_gallery_storage">Default Storage</string>
+    <string name="title_new_notification_sound">New message notification</string>
+    <string name="title_vibrate">Vibrate</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_channel</string>
+    <string name="summary_vibrate">Vibrate on new notification</string>
+    <string name="key_upload_over_wifi">key_upload_over_wifi</string>
+    <string name="key_gallery_name">key_gallery_name</string>
+    <string name="notifications_new_message">notifications_new_message</string>
+    <string name="key_notifications_new_message_ringtone">key_notifications_new_message_ringtone</string>
+    <string name="key_vibrate">key_vibrate</string>
+    <string name="key_send_feedback">key_send_feedback</string>
+
+
+    <string name="title_auto_upload">Auto upload</string>
+    <string name="summary_upload_over_wifi">Upload the videos when wifi is available</string>
+    <string name="title_upload_quality">Upload Quality</string>
+    <string name="summary_upload_video_quality">Specify video quality for uploads</string>
+    <string name="tag">description</string>
+    <string name="search">search</string>
 </resources>

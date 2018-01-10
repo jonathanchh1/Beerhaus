@@ -28,7 +28,7 @@
             android:layout_rowWeight="1" />
 
         <TextView
-            android:id="@+id/detail_today_date"
+            android:id="@+id/detail_title"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="15dp"
             android:fontFamily="sans-serif"
@@ -39,7 +39,8 @@
             android:layout_columnSpan="2"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
-            tools:text="Today, April 03" />
+            tools:text="Product Name" />
+
         <TextView
             android:id="@+id/name"
             android:layout_height="wrap_content"
