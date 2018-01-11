@@ -1,7 +1,6 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Fragments;
 
 import android.app.Fragment;
-import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -16,7 +15,6 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -29,13 +27,16 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.emi.jonat.beerhaus.Activities.DetailActivity;
+import com.emi.jonat.beerhaus.Services.ApiClient;
+import com.emi.jonat.beerhaus.Services.ApiInterface;
+import com.emi.jonat.beerhaus.Adapters.BeerAdapter;
+import com.emi.jonat.beerhaus.Services.BeerResponse;
+import com.emi.jonat.beerhaus.Models.Beeritems;
+import com.emi.jonat.beerhaus.BuildConfig;
+import com.emi.jonat.beerhaus.PaginationScrollListener;
+import com.emi.jonat.beerhaus.R;
 import com.emi.jonat.beerhaus.data.BeerContract;
-
-import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 
 
 import java.util.ArrayList;

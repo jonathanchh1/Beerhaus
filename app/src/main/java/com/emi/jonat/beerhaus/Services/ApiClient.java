@@ -1,4 +1,4 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Services;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

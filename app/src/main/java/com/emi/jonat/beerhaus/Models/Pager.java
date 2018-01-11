@@ -1,4 +1,4 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Models;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -1,4 +1,4 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Fragments;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -26,6 +26,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.emi.jonat.beerhaus.Activities.DetailActivity;
+import com.emi.jonat.beerhaus.Models.Beeritems;
+import com.emi.jonat.beerhaus.Favorited;
+import com.emi.jonat.beerhaus.Services.FetchStoresTask;
+import com.emi.jonat.beerhaus.R;
+import com.emi.jonat.beerhaus.Models.Store;
+import com.emi.jonat.beerhaus.Activities.StoreActivity;
+import com.emi.jonat.beerhaus.Adapters.StoreAdapter;
 import com.emi.jonat.beerhaus.data.BeerContract;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;

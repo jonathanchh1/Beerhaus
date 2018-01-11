@@ -1,4 +1,4 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Activities;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -20,6 +20,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.emi.jonat.beerhaus.Fragments.BeerFragment;
+import com.emi.jonat.beerhaus.R;
+import com.emi.jonat.beerhaus.Models.User;
 import com.google.android.gms.appinvite.AppInviteInvitation;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -48,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient;
     private FirebaseAuth mFirebaseAuth;
     private FirebaseUser mFirebaseUser;
-    Beeritems beeritems = new Beeritems();
     private User user = new User();
 
 

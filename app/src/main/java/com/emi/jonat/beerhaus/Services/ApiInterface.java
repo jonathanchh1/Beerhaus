@@ -1,4 +1,4 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Services;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

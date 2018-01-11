@@ -1,13 +1,15 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Services;
 
 import android.os.AsyncTask;
 import android.util.Log;
+
+import com.emi.jonat.beerhaus.BuildConfig;
+import com.emi.jonat.beerhaus.Models.Store;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
 import retrofit2.Call;
-import retrofit2.Callback;
 import retrofit2.Response;
 
 /**

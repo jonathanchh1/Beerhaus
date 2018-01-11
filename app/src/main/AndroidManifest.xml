@@ -12,14 +12,14 @@
         android:roundIcon="@mipmap/beer_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailActivity" />
+        <activity android:name=".Activities.DetailActivity" />
 
         <provider
             android:name=".data.BeerProvider"
@@ -27,10 +27,10 @@
             android:enabled="true"
             android:exported="false" />
 
-        <activity android:name=".StoreActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".SettingActivity"/>
+        <activity android:name=".Activities.StoreActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.ProfileActivity" />
+        <activity android:name=".Activities.SettingActivity"/>
     </application>
 
 </manifest>

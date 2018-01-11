@@ -1,8 +1,6 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Activities;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.os.Build;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,11 +9,13 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.emi.jonat.beerhaus.Activities.LoginActivity;
+import com.emi.jonat.beerhaus.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.squareup.picasso.Picasso;
 
-import static com.emi.jonat.beerhaus.BeerFragment.LOG_TAG;
+import static com.emi.jonat.beerhaus.Fragments.BeerFragment.LOG_TAG;
 
 public class ProfileActivity extends AppCompatActivity {
 

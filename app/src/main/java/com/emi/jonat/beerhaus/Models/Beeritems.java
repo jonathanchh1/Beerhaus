@@ -1,15 +1,11 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Models;
 
 import android.database.Cursor;
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.emi.jonat.beerhaus.data.BeerContract;
-import com.google.firebase.database.Exclude;
 import com.google.gson.annotations.SerializedName;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by jonat on 6/25/2017.

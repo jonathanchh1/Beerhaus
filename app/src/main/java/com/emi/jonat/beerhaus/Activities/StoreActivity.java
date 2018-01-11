@@ -1,4 +1,4 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Activities;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -9,6 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import com.emi.jonat.beerhaus.Fragments.BeerStoreFragment;
+import com.emi.jonat.beerhaus.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

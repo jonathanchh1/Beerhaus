@@ -1,4 +1,4 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Activities;
 
 import android.content.res.Configuration;
 import android.os.Bundle;

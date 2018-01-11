@@ -1,5 +1,7 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Services;
 
+import com.emi.jonat.beerhaus.Models.Pager;
+import com.emi.jonat.beerhaus.Models.Store;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;

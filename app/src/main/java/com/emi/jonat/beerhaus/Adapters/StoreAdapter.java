@@ -1,14 +1,15 @@
-package com.emi.jonat.beerhaus;
+package com.emi.jonat.beerhaus.Adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.time.LocalDateTime;
+import com.emi.jonat.beerhaus.R;
+import com.emi.jonat.beerhaus.Models.Store;
+
 import java.util.ArrayList;
 
 /**
